@@ -19,3 +19,9 @@ Output of task-1, total number of times each word has been tweeted, would be wri
 
 Output of task-2, median number of unique words per tweet, would be written to tweet_output/ft2.txt
 
+Benchmark testing done using 111k tweets. Took under 10 minutes to process these.
+
+Future suggestions: 
+1. Task-1, explore the option of writing words count to file sequentially. Insert for new words, update count for existing.
+2. Task-2, explore the option of skip lists (or dynamic lits) and algo suggested by soumya per below reference.
+    Efficient Algorithm for Computing a Running Median by Soumya Mohanty. https://dcc.ligo.org/T030168/public
