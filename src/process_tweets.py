@@ -7,10 +7,9 @@ Challenge is to implement two features:
     2. Calculate the median number of unique words per tweet, and update this median as tweets come in.
 *******************************************************************************************************************'''
 
-import statistics               #module import for median calculation
+import scipy as spy               #module import for median calculation
 from collections import Counter #module import for maintaining lists
 
-#def process(self, if1, of1, of2):
 wordscount = Counter()           #dict hash object with key & value, for keeping track of words and count
 #open files with 'with' statement. No need for close.
 with open("./tweet_input/tweets.txt", "r", encoding='utf-8') as ifile1, open("./tweet_output/ft2.txt", "w", encoding='utf-8') as ofile2:
@@ -20,14 +19,14 @@ with open("./tweet_input/tweets.txt", "r", encoding='utf-8') as ifile1, open("./
         twords =  Counter(line.split()) #uses built-in function to split on whitespace, default function
         twt_word_cnt.append(len(twords))#inserts number of unique words in
         wordscount.update(twords)       #increment unique words and their count to hash
-        ofile2.writelines("%.2f \n" % statistics.median(twt_word_cnt)) #calculates median on list values using built-in function and write median to file in 2 decimal format.
+        ofile2.writelines("%.2f \n" % spy.median(twt_word_cnt)) #calculates median on list values using built-in function and write median to file in 2 decimal format.
 
 #opens file for storing unique words and count
 with open("./tweet_output/ft1.txt", "w", encoding='utf-8') as ofile1:
     for item in sorted(wordscount.items()):             #loops through hash objects
         ofile1.writelines("{}\t{}".format(*item) + "\n")#writes hash key & value i.e unique word and its occurance across tweets to output file.
 
-    #end_of_file
+#end_of_file
 
 
 
