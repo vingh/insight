@@ -26,7 +26,7 @@ with open("./tweet_output/ft1.txt", "w", encoding='utf-8') as ofile1:
     for item in sorted(wordscount.items()):             #loops through hash objects
         ofile1.writelines("{}\t{}".format(*item) + "\n")#writes hash key & value i.e unique word and its occurance across tweets to output file.
 
-#end_of_file
+#end_of_program
 
 
 
