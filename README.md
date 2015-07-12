@@ -13,7 +13,7 @@ Challenge is to implement two features:
 
 Run 'run.sh' for execution of python program: process_tweets.py
 
-program expects tweets.txt in in tweets_input folder, with tweets. File is read using utf-8 rather than ascii, with this option ascii would work too.
+program expects tweets.txt in in tweets_input folder, with tweets. File is read using utf-8 rather than ascii, with this option ascii would work too. process_tweets_new does take file paths has input, since this is close to submission, personally, i choose to submit earlier verison.
 
 Output of task-1, total number of times each word has been tweeted, would be written to tweet_output/ft1.txt
 
@@ -27,3 +27,7 @@ Future suggestions:
 
 2. Task-2, explore the option of skip lists (or dynamic lits) and algo suggested by soumya per below reference.
     Efficient Algorithm for Computing a Running Median by Soumya Mohanty. https://dcc.ligo.org/T030168/public
+
+** run.sh written per cc-example. py command worked for me in cygwin instead of python.
+
+
