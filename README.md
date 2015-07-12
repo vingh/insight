@@ -19,7 +19,7 @@ Output of task-1, total number of times each word has been tweeted, would be wri
 
 Output of task-2, median number of unique words per tweet, would be written to tweet_output/ft2.txt
 
-Benchmark testing done using 111k tweets. Took under 10 minutes to process these.
+Benchmark testing done using 111k tweets. Scipy- Took under 10 minutes to process. Numpy took 10+ minutes and collections took above 1hour.
 
 Future suggestions: 
 
